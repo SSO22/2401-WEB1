@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #김철수 {
+            color: blue;
+        }
+
+        .영업팀{
+            font-size: 24px;
+        }
+
+        .인사팀{
+            font-size: 12px;
+        }
+
+        .대리{
+            color: blueviolet;
+        }
+
+        .과장{
+            font-size: 48px;
+        }
+        /* css는 맨 아래가 우선순위가 높다!! but .p로 자세하게 지정되면 이걸로우선순위로측정. */
+    </style>
+</head>
+<body>
+    
+    
+    1.id 선택자(#) : 우선순위가 높다!!!
+     -한 문서에 딱하나만 존재할수있는 선택자   
+    
+     2.class 선택자(.)
+     -한문서에 여러개 존재할수있는 선택자
+     -한태그가 여러클래스를 동시에 가질수있다.
+     -여러 태그가 하나의클래스를 같이가질수있다
+
+    3.태그 선택자
+     -html 태그를 활용하는 선택자
+     -디자인을 넣기 위해 사용하기보다 빼기위해사용함(위아래여백)리셋할때..
+
+     위 선택자들을 조합해서 사용가능
+
+     <!-- ex)p태그면서, 영업팀이면서 홍길동인 사람을 선택하고 싶을때 -->
+     p.영업팀#홍길동 {
+         css속성
+     }
+
+     css는 우선순위에따라서 속성이 무시되는 방식을 채택하고있다
+     우선순위는 기본적으로 아래있는 작성이 높게 책정되고,
+     선택자의 명확도, id인지 class인지 여부등에결정
+
+     <!-- 클래스는 여러번 쓸수있는데 띄워쓰기로 영업팀이기도하고 대리이기도한 이중적 의미부여 -->
+
+<p id="김철수" class="영업팀 대리">김철수입니다</p>
+<p id="홍길동" class="영업팀 사원">홍길동입니다</p>
+<p id="소현지" class="인사팀 대리">소현지입니다</p>
+<p id="이나나" class="인사팀 과장">이나나입니다</p>
+
+    </body>
+</html>
