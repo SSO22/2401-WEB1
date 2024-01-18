@@ -6,7 +6,7 @@
     <title>스타일시트</title>
 <style>
    a{
-    color: black;
+    color: rgb(218, 14, 48);
     /*밑줄없애기*/
     text-decoration: none;
    }
@@ -15,7 +15,7 @@
     padding: 0;
     }
     .text-maincolor {
-        color: green}
+        color: black}
     .text-pointcolor {
         color: red;
     }
@@ -33,14 +33,14 @@
     <!-- text 관련태그는 거의다상속된다(color도 상속됨) -->
     <!-- 하지만 상속박은 속성은 우선순위가 낮다 -->
 
-    <a href="#">여기를 누르면 이동됩니다</a>
-<!-- 아래와 같은 경우 a태그는 p태그로 부터 color:green은 상속받지만 -->
-<!-- a태그 자체에 color:black이 지정되어있기때문에 -->
+    <br><a href="https://food-ology.co.kr/">여기를 누르면 이동됩니다</a>
+<!-- 아래와 같은 경우 a태그는 p태그로 부터 color:black는 상속받지만 -->
+<!-- a태그 자체에 color가 지정되어있기때문에 지정된 컬러로 표현됨-->
 <!-- 우선순위상 검은 글씨로 나타남. -->
-    <p class="text-maincolor">내용을 자세히 확인하려면<a href="#">여기</a>를 클릭하세요</p>
+    <br><br><p class="text-maincolor">내용을 자세히 확인하려면<a href="https://food-ology.co.kr/">여기</a>를 클릭하세요</p>
 
     <!-- 이렇게쓰면 초록색글씨 -->
-    <p class="text-maincolor">내용을 자세히확인하려면<a href="#" class="text-maincolor">여기</a>를 클릭하세요</p>
+    <br><p class="text-maincolor">내용을 자세히 확인하려면<a href="https://food-ology.co.kr/" class="text-pointcolor">여기</a>를 클릭하세요</p>
     <!-- id선택자는 이후 기능성 필요에따라사용 일단 지금은클래스와태그만사용 -->
 </body>
 </html>
