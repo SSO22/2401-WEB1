@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        
+        }
+        .box {
+            width: 200px;
+            height: 200px;
+        }
+       /* 플루투보다 더 발전된 배치 속성 */
+       /* 자식 요소들을 일렬로 정렬해주는 속성 */
+       /* 강력한 부가기능들이 많기때문에 익숙해지면 편하다 */
+        .container {
+            display: flex;
+            padding: 12px;
+            background-color: pink;
+            margin-bottom: 8px;
+        }
+        
+        .red {
+            background-color: red;
+        }
+        .green {
+            background-color: green;
+        }
+
+        .test1{
+            height: 500px;
+            justify-content: flex-end;
+            /*흐름 방향 정렬 (가로흐름/세로흐름) 
+            flex-start(기본값)-흐름 시작점/ 
+           
+           /* 밑에 3개가 가장 많이쓰임 */
+            /* flex-end-흐름 끝쪽으로/ */
+            /* flex-center-흐름 중앙으로*/
+            /* space-between : 양쪽으로나뉘어짐 -첫번째개체와 마지막개체를 양쪽 끝에 배치후 나머진 가운데 배치. 여백이 동일하게..*/
+            /* ex> 전체가1000일째 100짜리 박스4개있을때 나머지 여백은 200씩 동일하게 나뉘어짐*/
+           
+            /* space-around: 모든개체에 양쪽에 여백을 동일하게 나오게 함.미관상 별로쓰지않음 */
+            /* space-evenly: 모든 여백을 동일하게 설정 */
+            
+           
+            align-items: center ;
+            /* 흐름 수직 방향 */
+            /* center */
+            /* flex-end */
+        }
+    </style>
+
+
+
+</head>
+<body>
+    
+    <div class="container">
+        <div class="red box"></div>
+        <div class="green box"></div>
+    </div>
+    <!-- div.red.box로 줄여 쓰면됨 -->
+    
+    <div class="container test1">
+        <div class="red box"></div>
+        <div class="green box"></div>
+    </div>
+        
+
+
+</body>
+</html>
