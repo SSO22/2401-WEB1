@@ -9,105 +9,129 @@
         margin: 0;
         padding: 0;
     }
-
+    .a {
+            text-decoration: none;
+            color: black;
+    } 
+        
     .container {
+            width: 800px;
+        }
 
-        /* display: flex; */
-        width: 100%;
-        align-items: center;
-    }   
-    .main-box {
-        display: inline-flex;
-        width: 800px;
-        height: 80px;
-        border-radius: 80px;
-        background-color: gray;
-        margin: 20px;
-        
-    }
-    .box2{
-        width: 100%;
-        
-    }
-    .icon-box {
-        display: inline-flex;
-        line-height: 2px;
-        width: 60px;
-        height: 60px;
-        
-        /* justify-content :space-between; */
-        background-color: gray;
-        border-radius: 15px; 
-        
-    .icon-name {
-        display: flex-center;
-        margin-top: 80px;
-        text-align: center;
-    }
+        .search-container {
+            /* width: 100%; */
+            height: 60px;
+            background-color: gray;
+            border-radius: 30px;
+            margin-bottom: 16px;
+
+        }
+
+        .menu-list-container {
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .menu-list-content > a {
+            display: flex;
+            width: 100%;
+            text-decoration: none;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .menu-content-icon {
+            width: 56px;
+            height: 56px;
+            background-color: gray;
+            border-radius: 24px;
+            /* margin-bottom:8px; */
+        }
+
+        .menu-name {
+            text-align: center;
+            color: #222;
+            font-weight: bold;
+            text-decoration: none;
+        }
 
     </style>
 </head>
 <body>
-
     <div class="container">
-        <div class="main-box"></div>
-       
-        <ul>
-                <li class="icon-box">
-                    <div class="icon-box2"></div>
-                    <span class="icon-name">메뉴1</span>
-                </li>
-                <li class="icon-box">
-                    <div class="icon-box2"></div>
-                    <span class="icon-name">메뉴2</span>
-                </li>
-                <li class="icon-box">
-                    <div class="icon-box2"></div>
-                    <span class="icon-name">메뉴3</span>
-                </li>
-    
-                <li class="icon-box">
-                    <div class="icon-box2"></div>
-                    <span class="icon-name">메뉴4</span>
-                </li>
-                <li class="icon-box">
-                    <div class="icon-box2"></div>
-                    <span class="icon-name">메뉴5</span>
-                </li>
-                <li class="icon-box">
-                    <div class="icon-box2"></div>
-                    <span class="icon-name">메뉴6</span>
-                </li>
-                <li class="icon-box">
-                    <div class="icon-box2"></div>
-                    <span class="icon-name">메뉴7</span>
-                </li>
-                <li class="icon-box">
-                    <div class="icon-box2"></div>
-                    <span class="icon-name">메뉴8</span>
-                </li>
-                <li class="icon-box">
-                    <div class="icon-box2"></div>
-                    <span class="icon-name">메뉴9</span>
-                </li>
-                <li class="icon-box">
-                    <div class="icon-box2"></div>
-                    <span class="icon-name">메뉴10</span>
-                </li>
-                <li class="icon-box">
-                    <div class="icon-box2"></div>
-                    <span class="icon-name">메뉴11</span>
-                </li>
-            </ul>
-       
-       
+        <div class="search-container">
+            <!-- 비워두겠습니다 -->
+        </div>
+        <ul class="menu-list-container">
+            <li class="menu-list-content">
+                <a href="#">
+                    <div class="menu-content-icon"></div>
+                    <p class="menu-name">메뉴</p>
+                </a>
+            </li>
+            <li class="menu-list-content">
+                <a href="#">
+                    <div class="menu-content-icon"></div>
+                    <p class="menu-name">메뉴</p>
+                </a>
+            </li>
+            <li class="menu-list-content">
+                <a href="#">
+                    <div class="menu-content-icon"></div>
+                    <p class="menu-name">메뉴</p>
+                </a>
+            </li>
+            <li class="menu-list-content">
+                <a href="#">
+                    <div class="menu-content-icon"></div>
+                    <p class="menu-name">메뉴</p>
+                </a>
+            </li>
+            <li class="menu-list-content">
+                <a href="#">
+                    <div class="menu-content-icon"></div>
+                    <p class="menu-name">메뉴</p>
+                </a>
+            </li>
+            <li class="menu-list-content">
+                <a href="#">
+                    <div class="menu-content-icon"></div>
+                    <p class="menu-name">메뉴</p>
+                </a>
+            </li>
+            <li class="menu-list-content">
+                <a href="#">
+                    <div class="menu-content-icon"></div>
+                    <p class="menu-name">메뉴</p>
+                </a>
+            </li>
+            <li class="menu-list-content">
+                <a href="#">
+                    <div class="menu-content-icon"></div>
+                    <p class="menu-name">메뉴</p>
+                </a>
+            </li>
+            <li class="menu-list-content">
+                <a href="#">
+                    <div class="menu-content-icon"></div>
+                    <p class="menu-name">메뉴</p>
+                </a>
+            </li>
+            <li class="menu-list-content">
+                <a href="#">
+                    <div class="menu-content-icon"></div>
+                    <p class="menu-name">메뉴</p>
+                </a>
+            </li>
+            <li class="menu-list-content">
+                <a href="#">
+                    <div class="menu-content-icon"></div>
+                    <p class="menu-name">메뉴</p>
+                </a>
+            </li>
+        </ul>
     </div>
-
-
-
-
-
-
 
 
 </body>
