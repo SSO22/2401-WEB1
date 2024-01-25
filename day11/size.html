@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+ * {
+        margin: 0;
+        padding: 0;
+    }
+    .box {
+        width:400px;
+        height: 200px;
+        background-color: gray;
+    }
+    .padding-box {
+        width:400px;
+        height: 200px;
+        background-color: pink;
+        padding: 32px;
+        box-sizing: border-box;
+    }
+    .border-box {
+        width:400px;
+        height: 200px;
+        background-color: aqua;
+        padding: 32px;
+        border: 2px solid green;
+       
+        box-sizing: border-box;
+    }
+</style>
+   
+
+</head>
+<body>
+    
+    <div class="box"></div>
+    <div class="padding-box"></div>
+    <div class="border-box"></div>
+    <!-- box-size 속성은 css박스 모델의 사이즈 기준을 설정하는 속성 -->
+    <!-- 예를 들어 width400일때 기본값(conten-box)는 컨텐츠 영역을 400px, 패딩과 보더룰 구 위에 얻는 방식 -->
+    <!-- width 400px일때 boder-box는 패딩과 보더값을 합한 400으로 정해놓고 컨테츠 영역을 줄이는 방식 -->
+    <!-- 우리는 테두리 까지의  그크기를개체의 크기로 인식하기때문에 boder-box를 쓰는게 훨씬 직관적 -->
+
+</body>
+</html>
