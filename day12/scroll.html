@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    .scroll-box {
+        overflow: scroll;
+        /* 이런식으로 넣으면 x,y 양방향으로 생기는 문제가있다 */
+        width: 200px;
+        height: 200px;
+    }
+    .scroll-y-box {
+        width: 200px;
+        height: 200px;
+        overflow-y: auto;
+        /* y쪽으로만 스크롤이 만들어짐. */
+        /* 오토는 글씨가 많으면 생기고 없으면 안생김. */
+        /* scroll;은 무조건 생김.. */
+    }
+
+
+
+
+
+   </style>
+   
+
+</head>
+<body>
+    <div class="scroll-box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio mollitia cum placeat quidem dolore facilis voluptatem debitis aliquid tempora harum, 
+        repellendus quibusdam reiciendis similique distinctio quisquam. Quaerat minima nemo excepturi.
+    </div>
+    <br><br>
+    <div class="scroll-y-box">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti voluptates sint quas dolorum magni mollitia aspernatur laboriosam ad, 
+        totam eius excepturi eaque est incidunt assumenda ut numquam! Saepe, architecto vero.
+    </div>
+
+
+
+</body>
+</html>

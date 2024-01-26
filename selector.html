@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    * : 전체선택자.(별표)곱하기라는 뜻도있지만,선택자or이름적인 관점에서 '모든것'을 뜻함.
+    우리가쓰는 *안에 마진과패딩을 0으로 만드는 작성은 모든태그에게 적용하겠다는 뜻.
+    
+    태그,아이디,클래스는 스킵
+
+    .container.contents
+    <div class="container contents">여기에 적용</div>
+    <!-- 컨테이너와 컨텐츠의 클래스를 가짐. -->
+
+    .container > .contents
+    <div class="container">
+        <div class="contents">여기에적용</div>
+        <div class="inner">
+            <div class="contents">여기엔 적용안됨</div>
+        </div>
+    </div>
+    <!-- 컨테이너가 직계자식에게만 적용되고 후손에겐 적용 안됨 -->
+    
+    .container .contents
+    <div class="container">
+        <div class="contents">여기에적용</div>
+        <div class="inner">
+            <div class="contents">여기에도적용됨</div>
+        </div>
+    </div>
+    <!--직계자손과 후손에게도 적용  -->
+  
+    .container, .contents
+     <div class="container"></div>
+     <div class="contents"></div>
+<!-- 상속은 최대 3단계까지만 한다..맨 나중것을 밖으로뻈을떄 문제가 됨.문제가 안되게끔 크래스를 명확하게쓸때만.. -->
+
+</body>
+</html>

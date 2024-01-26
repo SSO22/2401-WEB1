@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+ * {
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        display: flex;
+        padding: 10px;
+        gap: 30px;
+
+    }
+    .box {
+        width: 200px;
+        height: 200px;
+        border: 2px solid black;
+        box-sizing: border-box;
+    }
+  
+    .flow-contents {
+       height: auto;
+       /* 높이는 자동이 기본값으로 적용됨-콘텐츠가늘어나면 박스도 늘어남 */
+    }
+    .hidden-contents {
+      overflow: hidden;
+     /* 콘텐츠가 넘칠때 안보이게 만듬.. 스크롤로 처리할수도 있음.. */
+    }
+
+    </style>
+
+</head>
+<body>
+    <div class="container">
+    <div class="box contentsl">
+        <h4>콘텐츠 양이 일정</h4>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, 
+            optio laudantium sequi quam nemo ea cupiditate voluptatum aliquid provident? In, 
+            porro! Similique quasi enim beatae doloribus, sint rem ipsa voluptatibus!
+        </p>
+    </div>
+    <div class="box contents2">
+        <h4>콘텐츠 양이 많거나 유동적일때 흘러 넘침</h4>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+            Ipsa ab veniam tenetur libero voluptates modi illum, aliquid, beatae ullam blanditiis minima excepturi enim fugit.
+            Perferendis est sapiente earum excepturi voluptates.
+        </p>
+    </div>
+    <div class="box flow-contents">
+        <h4>콘텐츠의양에 따라서 높이가 늘어남</h4>
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+            Rem itaque veritatis nulla voluptatum est, assumenda amet rerum laboriosam tempore voluptate qui adipisci impedit veniam porro.
+            Cum vero magnam dolores reiciendis.
+        </p>
+    </div>
+    <div class="box hidden-contents">
+        <h4>박스의 지정된 높이 만큼만 콘텐츠가 보임</h4>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Suscipit expedita maxime quis eos sunt quam cupiditate, tempora, animi similique fugiat quibusdam ipsa unde recusandae possimus molestiae numquam maiores nobis id.
+        </p>
+    </div>
+</div>
+</body>
+</html>
