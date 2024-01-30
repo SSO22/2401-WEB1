@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+        margin: 0;
+        padding: 0;
+    }
+    /* 가상의 선택자 - 특이하게 클론(:)이 2개다! */
+    h2::before{
+        content: '하하';
+    }
+    p::after {
+        content: '호호';
+    }
+    </style>
+</head>
+<body>
+    <h2>title-1</h2>
+    <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non inventore ab error officiis, 
+        voluptates aliquid corrupti perspiciatis accusantium quibusdam doloremque excepturi consequuntur consequatur laboriosam dolorum ipsam fuga ducimus. Labore, eligendi.
+    </p>
+</body>
+</html>
