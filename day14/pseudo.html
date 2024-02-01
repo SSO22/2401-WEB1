@@ -18,9 +18,9 @@
         text-decoration: underline;
     }
     .link-add-arrow::after{
-        /* 가상요소 선택자에서 컨텐트요소는 반드시 피요하다!! */
+        /* 가상요소 선택자에서 컨텐트요소는 반드시 필요하다!! */
         content: '';
-        /* before와 after는 inline이 기본속성이라 모양을 만들때는 인라인블록이나 블록을 넣어줭야작동!! */
+        /* before와 after는 inline이 기본속성이라 모양을 만들때는 인라인블록이나 블록을 넣어줭야 작동!! */
         display: inline-block;
         
         height: 8px;
@@ -36,6 +36,6 @@
 <body>
     <a class="link-add-arrow" href="#">Buy now</a>
 
-    <a href="#" class="link-add-arrow">새로만든 구매하기</a>
+    <a class="link-add-arrow" href="#">새로만든 구매하기</a>
 </body>
 </html>
