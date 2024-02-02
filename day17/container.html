@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        img {
+            display: block;
+            width: 100%;
+        }
+        section {
+            padding: 0 32px;
+            /* 섹션에 패딩값을 주면 외부여백이 생김. */
+
+        }
+        .section-container{
+        border: 1px solid #222 ;
+        max-width: 1302px;
+        /* width는 기본값으로 100%이다  */
+        /* max-width는 제약을 걸어주는속성 */
+        /* 이렇게 작성하면 1302px까지만 커지게 만들겠다..그보다 작을때는 부모크기 100%로 따라간다 */
+        margin: 0 auto;
+        /* 컨테이너에 많이 쓰임. 블록구조에서 블록은 좌우로다 잡아먹는다....상하엔 0으로 넣고 좌우는 오토로 주겠다--> 가운데 정렬!!!!! */
+
+        }
+        @media screen and (max-width:799px) {
+            section {
+                padding: 0 16px;
+            }
+        }
+        /* 일정이상 줄어들면 패딩값이 변한다.. */
+    </style>
+</head>
+<body>
+    <section>
+        <div class="section-container">
+
+            <div class="test">
+                <h2>겨울</h2>
+                <p>내용</p>
+                <img src="https://mblogthumb-phinf.pstatic.net/MjAxNzExMTBfMTQx/MDAxNTEwMzAyMTM4ODE2.rZbcBLmbWvJV5IMUN0eJlIhQaoyyehxsESJy7-OFXPgg.OInmk9XzOVulTG2s7pwCZub5wVLpCONNN1JrNifSC18g.JPEG.fotolia_korea/%EA%B2%A8%EC%9A%B8_%ED%92%8D%EA%B2%BD%EC%82%AC%EC%A7%84_2.jpg?type=w800" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- 반응형 홈페이지의 공식 작성!! -->
+</body>
+</html>
