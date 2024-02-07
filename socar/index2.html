@@ -14,7 +14,7 @@
             /* height: auto; */
             display: flex;
             justify-content: space-between;
-            background: url(img/main_visual_fullscreen.jpg) no-repeat;
+            
             
         }
         .logo {
@@ -36,24 +36,30 @@
         #intro {
             height: 100vh;
             width: 100%;
-            padding: 0;
+            /* display: flex; */
             margin-bottom: 60px;
             text-align: center;
-            /* justify-content: center; */
+            justify-content: center;
+            background-position-x: 25%;
+            /* 백그라운드 포지션을 위치 25%, 50%, 75%, 100%로 정했을때 위치를 정하면 백그라운드의 인물이 빠지는걸 막을수있다 */
+            background: url(img/main_visual_fullscreen.jpg) no-repeat;
         }
             
         .main-text {
           
             font-size: 5rem;
+            font-weight: bold;
+            color: white;
         }
        
         
         .container {
-            margin: 50px;
-            width: 300px;
-            height: 150px;
-            overflow: hidden;
-            position: relative;
+            /* margin: 50px; */
+            width: 800px;
+            height: 0px auto;
+            /* overflow: hidden; */
+            /* position: relative; */
+            padding-bottom: 80px;
 
         }
        
@@ -63,9 +69,8 @@
 <body>
     <header>
         <div class="logo">
-            <a href="https://www.socar.kr/">
+            <a href="#">
                 <img src="img/logo-w.svg" alt="logo">
-                
             </a>
         </div>
         <div class="hamberger"></div>
@@ -75,20 +80,18 @@
         <p class="main-text">
             차가 필요한<br>모든 순간, 쏘카
         </p>
-        <img id="intro"  src="img/main_visual_fullscreen.jpg" alt="쏘카 풀 이미지">
+        
+        <img id="intro-img"  src="img/main_visual_fullscreen.jpg" alt="쏘카 풀 이미지">
         
        
     </section>
     
-      
-           
-    </section>
     <section class="sub-container">
         <div class="container">
             
-            <h1>
+            <h2>
                 24시간 언제나
-            </h1>
+            </h2>
             <p class="subtext">
                 한밤중이나 주말에도 스마트폰으로<br>시간에 구애받지 않고<br>쏘카와 함께 이동하세요.
             </p>
