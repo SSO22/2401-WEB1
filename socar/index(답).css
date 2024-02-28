@@ -79,7 +79,9 @@ section {
     margin: 0 auto;
     padding: 80px 0;
 }
-
+.content {
+    list-style: none;
+}
 .content-container {
     display: flex;
     flex-direction: column;
@@ -153,9 +155,13 @@ footer {
 }
 .sns-container li {
     width: 30px;
+    list-style: none;
 }
 .footer-menu{
     justify-content: space-between;
+}
+.footer-menu li {
+    list-style: none;
 }
 .footer-menu a {
     color: #c5c8ce;
